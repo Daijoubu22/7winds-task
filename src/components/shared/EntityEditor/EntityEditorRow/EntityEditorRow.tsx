@@ -54,7 +54,6 @@ function EntityEditorRow({ row, deepLevel, parentId }: EntityEditorRowProps) {
               onClick={deleteRow}
             >
               <RemoveLogo />
-              <RemoveLogo />
             </button>
           </div>
         </div>
