@@ -1,3 +1,5 @@
+@use 'src/styles/vars/colors';
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: colors.$bg;
+  color: colors.$text-primary;
 
   &__content {
     flex-grow: 1;

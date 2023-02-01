@@ -1,0 +1,14 @@
+@use 'src/styles/vars/colors';
+
+.entity-editor {
+  display: grid;
+  grid-template-columns: auto 1fr 200px 200px 200px 200px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    padding: 10px 12px;
+    color: colors.$text-secondary;
+  }
+}

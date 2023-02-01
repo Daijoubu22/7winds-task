@@ -1,0 +1,85 @@
+@use 'src/styles/vars/colors';
+
+.entity-editor {
+  &__row {
+    display: contents;
+  }
+
+  &__value {
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    padding: 0 12px;
+    border-top: 1px solid colors.$border;
+  }
+
+  &__btns {
+    position: relative;
+  }
+
+  &__btns-bg {
+    position: relative;
+    display: flex;
+    gap: 12px;
+    padding: 6px;
+    background: transparent;
+    border-radius: 6px;
+    z-index: 100;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background: colors.$bg-light;
+    }
+
+    &:hover .entity-editor__delete-btn {
+      opacity: 1;
+    }
+  }
+
+  &__btn {
+    display: flex;
+  }
+
+  &__create-btn {
+    background-color: colors.$bg-dark;
+  }
+
+  &__delete-btn {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 14px;
+    left: -6px;
+    width: 12px;
+    height: 60px;
+    border-left: 1px solid colors.$bg-hover;
+    border-bottom: 1px solid colors.$bg-hover;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 8px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    border: 1px solid colors.$border;
+    border-radius: 6px;
+    color: colors.$text-secondary;
+  }
+
+  &__submit, &__id {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}

@@ -4,6 +4,11 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/control-has-associated-label": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/anchor-is-valid": 0
   }
 }
